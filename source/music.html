@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - music player widget</title>
+  <link rel="stylesheet" href="../css/music.css">
+
+</head>
+<body>
+  <!-- partial:index.partial.html -->
+  <div class="player">
+  
+      <div class="player__header">
+  
+        <div class="player__img player__img--absolute slider">
+  
+          <button class="player__button player__button--absolute--nw playlist">
+  
+            <img src="../img/playlist3.png" alt="playlist-icon">
+  
+          </button>
+  
+          <button class="player__button player__button--absolute--center play">
+  
+            <img src="../img/play.svg" alt="play-icon">
+            <img src="../img/pause.svg" alt="pause-icon">
+  
+          </button>
+  
+          <div class="slider__content">
+  
+            <img class="img slider__img" src="../img/songs/ultimoska.jpg" alt="cover">
+            <img class="img slider__img" src="../img/songs/fiestapagana.jpeg" alt="cover">
+            <img class="img slider__img" src="../img/songs/iwasmadeforlovingyou.jpg" alt="cover">
+            <img class="img slider__img" src="../img/songs/elnolomato.jpg" alt="cover">
+  
+            <img class="img slider__img" src="../img/songs/paintedblack.png" alt="cover">
+            <img class="img slider__img" src="../img/songs/redmorninglight.jpg" alt="cover">
+            <img class="img slider__img" src="../img/songs/thefinalcountdown.jpg" alt="cover">
+            
+  
+          </div>
+  
+        </div>
+  
+        <div class="player__controls">
+  
+          <button class="player__button back">
+  
+            <img class="img" src="../img/back.svg" alt="back-icon">
+  
+          </button>
+          
+          <p class="player__context slider__context">
+  
+            <strong class="slider__name"></strong>
+            <span class="player__title slider__title"></span>
+  
+          </p>
+  
+          <button class="player__button next">
+  
+            <img class="img" src="../img/next.svg" alt="next-icon">
+  
+          </button>
+  
+          <div class="progres">
+  
+            <div class="progres__filled"></div>
+  
+          </div>
+  
+        </div>
+  
+      </div>
+  
+      <ul class="player__playlist list">
+  
+        <li class="player__song">
+  
+          <img class="player__img img" src="../img/songs/ultimoska.jpg" alt="cover">
+  
+          <p class="player__context">
+  
+            <b class="player__song-name">El último ska</b>
+            <span class="flex">
+  
+              <span class="player__title">Panteón Rococó</span>
+              <span class="player__song-time"></span>
+  
+            </span>
+  
+          </p>
+  
+          <audio class="audio" src="../audio/01 El Último Ska.mp3"></audio>
+  
+        </li>
+  
+        <li class="player__song">
+  
+          <img class="player__img img" src="../img/songs/fiestapagana.jpeg" alt="cover">
+  
+          <p class="player__context">
+  
+            <b class="player__song-name">Fiesta Pagana</b>
+            <span class="flex">
+  
+              <span class="player__title">Mägo de Oz</span>
+              <span class="player__song-time"></span>
+  
+            </span>
+            
+          </p>
+  
+          <audio class="audio" src="../audio/01 Fiesta Pagana.mp3"></audio>
+  
+        </li>
+  
+        <li class="player__song">
+  
+          <img class="player__img img" src="../img/songs/iwasmadeforlovingyou.jpg" alt="cover">
+  
+          <p class="player__context">
+  
+            <b class="player__song-name">I Was Made for Loving You</b>
+            <span class="flex">
+  
+              <span class="player__title">KISS</span>
+              <span class="player__song-time"></span>
+  
+            </span>
+              
+          </p>
+  
+          <audio class="audio" src="../audio/01 I Was Made For Lovin' You.mp3"></audio>
+  
+        </li>
+  
+        <li class="player__song">
+  
+          <img class="player__img img" src="../img/songs/elnolomato.jpg" alt="cover">
+  
+          <p class="player__context">
+  
+            <b class="player__song-name">Él no lo mató</b>
+            <span class="flex">
+  
+              <span class="player__title">El Haragán ft. Alex Lora</span>
+              <span class="player__song-time"></span>
+  
+            </span>
+            
+          </p>
+  
+          <audio class="audio" src="../audio/01 Él No Lo Mató.mp3"></audio>
+  
+        </li>
+  
+        <li class="player__song">
+  
+          <img class="player__img img" src="../img/songs/paintedblack.png" alt="cover">
+  
+          <p class="player__context ">
+  
+            <b class="player__song-name">Painted Black</b>
+            <span class="flex">
+  
+              <span class="player__title">The Rolling Stones</span>
+              <span class="player__song-time"></span>
+  
+            </span>
+  
+          </p>
+  
+          <audio class="audio" src="../audio/01 Paint It, Black.mp3"></audio>
+  
+        </li>
+  
+        <li class="player__song">
+  
+          <img class="player__img img" src="../img/songs/redmorninglight.jpg" alt="cover">
+  
+          <p class="player__context">
+  
+            <b class="player__song-name">Red Morning Light</b>
+            <span class="flex">
+  
+              <span class="player__title">Kings of Leon</span>
+              <span class="player__song-time"></span>
+  
+            </span>
+  
+          </p>
+  
+          <audio class="audio" src="../audio/01 Red Morning Light.mp3"></audio>
+  
+        </li>
+  
+        <li class="player__song">
+  
+          <img class="player__img img" src="..//img/songs/thefinalcountdown.jpg" alt="cover">
+  
+          <p class="player__context ">
+  
+            <b class="player__song-name">The Final Countdown <span class="uppercase">4am</span> remix</b>
+            <span class="flex">
+  
+              <span class="player__title">Europe</span>
+              <span class="player__song-time"></span>
+  
+            </span>
+  
+          </p>
+  
+          <audio class="audio" src="../audio/01 The Final Countdown.mp3"></audio>
+  
+        </li>
+  
+      </ul>
+  
+    </div>
+  <!-- partial -->
+
+  <script  src="../js/music.js"></script>
+
+</body>
+</html>

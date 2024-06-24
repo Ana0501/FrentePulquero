@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Image Slider - responsive, modular, autoplay</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:200,300,400,700">
+
+<meta name="viewport" content="width=device-width"><link rel="stylesheet" href="../css/slider.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- Slider 1 -->
+<div class="slider" id="slider1">
+    <!-- Slides -->
+    <div style="background-image:url(../img/slide/1.jpg)"></div>
+  <!--  <div style="background-image:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/30256/Gif-pont-lueur-600.gif)"></div>-->
+    <div style="background-image:url(../img/slide/2.jpg)"></div>
+    <div style="background-image:url(../img/slide/3.jpg)"></div>
+    <div style="background-image:url(../img/slide/4.jpg)"></div>
+    <div style="background-image:url(../img/slide/5.jpg)"></div>
+    <!-- The Arrows -->
+    <i class="left" class="arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100">
+            <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"></path>
+        </svg></i>
+    <i class="right" class="arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100">
+            <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" transform="translate(100, 100) rotate(180) "></path>
+        </svg></i>
+    <!-- Title Bar -->
+    <span class="titleBar">
+        <h1>FRENTE PULQUERO</h1>
+    </span>
+</div>
+
+
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src="../js/slider.js"></script>
+
+</body>
+</html>
